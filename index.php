@@ -25,7 +25,7 @@
 
                         $stmt = sqlsrv_query($con, $sql, $params, $options);
 
-                        echo "<select name='provincia' id='provincia' class='form-control'>";
+                        echo "<select id='provincia' name='provincia' class='form-control'>";
 
                             echo "<option value='0'>Seleccione la provincia</option>";
 
@@ -48,11 +48,11 @@
 
                         echo "<select id='canton' name='canton' class='form-control'>";
 
-                            echo "<option value='0'>Seleccione el canton</option>";
+                            /*echo "<option value='0'>Seleccione el canton</option>";
 
                             while($fila = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
                                 echo "<option value=''></option>";
-                            }
+                            }*/
 
                         echo "</select>";
                     ?>
@@ -69,11 +69,11 @@
 
                         echo "<select id='distrito' name='distrito' class='form-control'>";
 
-                            echo "<option value='0'>Seleccione el distrito</option>";
+                            /*echo "<option value='0'>Seleccione el distrito</option>";
 
                             while($fila = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
                                 echo "<option value=''></option>";
-                            }
+                            }*/
 
                         echo "</select>";
                     ?>

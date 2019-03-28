@@ -17,12 +17,11 @@
 
     $stmt = sqlsrv_query($con, $sql, $params, $options);
 
-    $html = "<option value='0'>Seleccione la provincia</option>";
+    $html = "<option value='0'>Seleccione el distrito</option>";
 
     while($fila = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
-        $html = "<option value='".$fila['ID_DISTRITO']."'>".$fila['NOMBRE']."</option>";
-        echo $html;
+        $html.= "<option value='".$fila['ID_DISTRITO']."'>".$fila['NOMBRE']."</option>";
     }
 
-    //echo $html;
+    echo $html;
 ?>
